@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #fef9f6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #222121;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffe0b2;
+}
+
+/* Recipe Section */
+.recipe-detail {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease;
+}
+
+.recipe-detail h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #222121;
+    text-align: center;
+    font-weight: 600;
+}
+
+.recipe-detail img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-detail h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #555;
+    border-bottom: 2px solid #ff7043;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.recipe-detail ul,
+.recipe-detail ol {
+    margin-left: 30px;
+    margin-bottom: 15px;
+    padding-left: 0;
+    list-style-position: outside;
+    font-size: 18px;
+    color: #555;
+}
+
+.recipe-detail ul li,
+.recipe-detail ol li {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.recipe-detail ol li {
+    list-style: decimal;
+}
+
+.recipe-detail ul li {
+    list-style: square;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222121;
+    color: white;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .recipe-detail {
+        padding: 20px;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+
+    recipe-detail h2 {
+        font-size: 28px;
+    }
+
+    recipe-detail h3 {
+        font-size: 20px;
+    }
+}
